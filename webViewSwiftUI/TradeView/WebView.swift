@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 import WebKit
 
-struct WedView: UIViewRepresentable {
+struct WebView: UIViewRepresentable {
     
-    let url: URL
+    let urlString: String
     @Binding var isLoading: Bool
     
     func makeCoordinator() -> Coordinator {
@@ -20,8 +20,7 @@ struct WedView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> some UIView {
        let webView = WKWebView()
-        let request = URLRequest(url: url)
-        webView.load(request)
+        webView.loadHTMLString(urlString, baseURL: nil)
         return webView
         
     }
