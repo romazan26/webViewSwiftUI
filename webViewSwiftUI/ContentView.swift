@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+            TabView {
+                TradeView()
+                    .tabItem {
+                        Image(systemName: "chart.xyaxis.line")
+                        Text("Trade")
+                    }
+                TopView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Top")
+                    }
+            }
+        
     }
+    
 }
+
 
 #Preview {
     ContentView()

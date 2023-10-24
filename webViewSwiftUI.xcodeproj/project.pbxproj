@@ -11,6 +11,11 @@
 		303A61C12AE0612200CCDBEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61C02AE0612200CCDBEE /* ContentView.swift */; };
 		303A61C32AE0612400CCDBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303A61C22AE0612400CCDBEE /* Assets.xcassets */; };
 		303A61C62AE0612400CCDBEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303A61C52AE0612400CCDBEE /* Preview Assets.xcassets */; };
+		303A61CD2AE0616000CCDBEE /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61CC2AE0616000CCDBEE /* WebView.swift */; };
+		303A61CF2AE06BD200CCDBEE /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61CE2AE06BD200CCDBEE /* TradeView.swift */; };
+		303A61D12AE06D4200CCDBEE /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61D02AE06D4200CCDBEE /* TopView.swift */; };
+		303A61D32AE79AEC00CCDBEE /* widgetForex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61D22AE79AEC00CCDBEE /* widgetForex.swift */; };
+		303A61D62AE7BDD100CCDBEE /* TopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61D52AE7BDD100CCDBEE /* TopModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		303A61C02AE0612200CCDBEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		303A61C22AE0612400CCDBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303A61C52AE0612400CCDBEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		303A61CC2AE0616000CCDBEE /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		303A61CE2AE06BD200CCDBEE /* TradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
+		303A61D02AE06D4200CCDBEE /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		303A61D22AE79AEC00CCDBEE /* widgetForex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetForex.swift; sourceTree = "<group>"; };
+		303A61D52AE7BDD100CCDBEE /* TopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,9 @@
 				303A61C02AE0612200CCDBEE /* ContentView.swift */,
 				303A61C22AE0612400CCDBEE /* Assets.xcassets */,
 				303A61C42AE0612400CCDBEE /* Preview Content */,
+				303A61D42AE7BD2000CCDBEE /* TradeView */,
+				303A61D02AE06D4200CCDBEE /* TopView.swift */,
+				303A61D52AE7BDD100CCDBEE /* TopModel.swift */,
 			);
 			path = webViewSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +78,16 @@
 				303A61C52AE0612400CCDBEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		303A61D42AE7BD2000CCDBEE /* TradeView */ = {
+			isa = PBXGroup;
+			children = (
+				303A61CE2AE06BD200CCDBEE /* TradeView.swift */,
+				303A61CC2AE0616000CCDBEE /* WebView.swift */,
+				303A61D22AE79AEC00CCDBEE /* widgetForex.swift */,
+			);
+			path = TradeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303A61D32AE79AEC00CCDBEE /* widgetForex.swift in Sources */,
+				303A61CD2AE0616000CCDBEE /* WebView.swift in Sources */,
+				303A61D62AE7BDD100CCDBEE /* TopModel.swift in Sources */,
+				303A61D12AE06D4200CCDBEE /* TopView.swift in Sources */,
+				303A61CF2AE06BD200CCDBEE /* TradeView.swift in Sources */,
 				303A61C12AE0612200CCDBEE /* ContentView.swift in Sources */,
 				303A61BF2AE0612200CCDBEE /* webViewSwiftUIApp.swift in Sources */,
 			);
