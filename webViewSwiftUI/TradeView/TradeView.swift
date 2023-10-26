@@ -40,7 +40,7 @@ struct TradeView: View {
                    .frame(width: 450, height: 300)
                    .border(Color("backGroundApp"), width: 20)
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {}, label: {
                     Text("BTC/USD")
                         .font(.title)
                 })
