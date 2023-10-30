@@ -77,13 +77,13 @@
 		303A61BD2AE0612200CCDBEE /* webViewSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				3037D9172AF04759006021C1 /* Currency pair */,
 				30C5061A2AEA910900030F9D /* LaunchScreen */,
-				30C506192AEA90EF00030F9D /* TopView */,
 				303A61C02AE0612200CCDBEE /* ContentView.swift */,
 				303A61BE2AE0612200CCDBEE /* webViewSwiftUIApp.swift */,
-				303A61C22AE0612400CCDBEE /* Assets.xcassets */,
 				303A61C42AE0612400CCDBEE /* Preview Content */,
+				303A61C22AE0612400CCDBEE /* Assets.xcassets */,
+				3037D9172AF04759006021C1 /* Currency pair */,
+				30C506192AEA90EF00030F9D /* TopView */,
 				303A61D42AE7BD2000CCDBEE /* TradeView */,
 			);
 			path = webViewSwiftUI;

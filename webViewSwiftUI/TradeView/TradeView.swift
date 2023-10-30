@@ -12,6 +12,7 @@ struct TradeView: View {
     @State private var balance = "10 000"
     @State private var timer = "10:00"
     @State private var Investment = "1,000"
+    @State var curs = "BTC/USD"
     
     @FocusState private var keyboardIsFocused: Bool
     var body: some View {
@@ -41,7 +42,7 @@ struct TradeView: View {
                        .frame(width: 450, height: 300)
                        .border(Color("backGroundApp"), width: 20)
                     
-                    NavigationLink("BTC/USD", destination: CurrencyPairView())
+                    NavigationLink(curs, destination: CurrencyPairView(curs: curs))
                         .costomStyle()
                         .foregroundStyle(.white)
                         .bold()

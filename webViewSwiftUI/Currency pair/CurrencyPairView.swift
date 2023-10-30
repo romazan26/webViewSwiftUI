@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CurrencyPairView: View {
+    var curs: String
     var body: some View {
         ZStack{
             Color("backGroundApp")
@@ -18,6 +19,9 @@ struct CurrencyPairView: View {
                     .bold()
                     .font(.title)
                 Spacer()
+                NavigationLink("GRP", destination: TradeView(curs: "GRR"))
+                    .foregroundStyle(.white)
+                Spacer()
             }.padding()
             
             
@@ -26,5 +30,5 @@ struct CurrencyPairView: View {
 }
 
 #Preview {
-    CurrencyPairView()
+    CurrencyPairView(curs: "BTC/USD" )
 }
