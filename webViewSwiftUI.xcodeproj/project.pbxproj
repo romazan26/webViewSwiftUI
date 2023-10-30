@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3037D9192AF04795006021C1 /* CurrencyPairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037D9182AF04795006021C1 /* CurrencyPairView.swift */; };
 		303A61BF2AE0612200CCDBEE /* webViewSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61BE2AE0612200CCDBEE /* webViewSwiftUIApp.swift */; };
 		303A61C12AE0612200CCDBEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A61C02AE0612200CCDBEE /* ContentView.swift */; };
 		303A61C32AE0612400CCDBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303A61C22AE0612400CCDBEE /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3037D9182AF04795006021C1 /* CurrencyPairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairView.swift; sourceTree = "<group>"; };
 		303A61BB2AE0612200CCDBEE /* webViewSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webViewSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303A61BE2AE0612200CCDBEE /* webViewSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewSwiftUIApp.swift; sourceTree = "<group>"; };
 		303A61C02AE0612200CCDBEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3037D9172AF04759006021C1 /* Currency pair */ = {
+			isa = PBXGroup;
+			children = (
+				3037D9182AF04795006021C1 /* CurrencyPairView.swift */,
+			);
+			path = "Currency pair";
+			sourceTree = "<group>";
+		};
 		303A61B22AE0612200CCDBEE = {
 			isa = PBXGroup;
 			children = (
@@ -67,10 +77,11 @@
 		303A61BD2AE0612200CCDBEE /* webViewSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3037D9172AF04759006021C1 /* Currency pair */,
 				30C5061A2AEA910900030F9D /* LaunchScreen */,
 				30C506192AEA90EF00030F9D /* TopView */,
-				303A61BE2AE0612200CCDBEE /* webViewSwiftUIApp.swift */,
 				303A61C02AE0612200CCDBEE /* ContentView.swift */,
+				303A61BE2AE0612200CCDBEE /* webViewSwiftUIApp.swift */,
 				303A61C22AE0612400CCDBEE /* Assets.xcassets */,
 				303A61C42AE0612400CCDBEE /* Preview Content */,
 				303A61D42AE7BD2000CCDBEE /* TradeView */,
@@ -189,6 +200,7 @@
 				303A61D32AE79AEC00CCDBEE /* widgetForex.swift in Sources */,
 				30C5061E2AEAFF2800030F9D /* ProgressBarView.swift in Sources */,
 				303A61CD2AE0616000CCDBEE /* WebView.swift in Sources */,
+				3037D9192AF04795006021C1 /* CurrencyPairView.swift in Sources */,
 				303A61D62AE7BDD100CCDBEE /* TopModel.swift in Sources */,
 				303A61D12AE06D4200CCDBEE /* TopView.swift in Sources */,
 				303A61CF2AE06BD200CCDBEE /* TradeView.swift in Sources */,

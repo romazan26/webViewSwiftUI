@@ -23,11 +23,8 @@ struct TopView: View {
                     .bold()
                     .foregroundStyle(.white)
                 List(tops) { top in
-                    
-                    ZStack {
-                        Color("backGroundApp")
-                            .ignoresSafeArea()
                         HStack {
+                            
                             Text("\(top.id)")
                                 .frame(width: 20, alignment: .center)
                             Text("\(top.country)")
@@ -41,9 +38,10 @@ struct TopView: View {
                                 .foregroundStyle(.green)
                         }.foregroundStyle(.white)
                         
-                    }
-                    
+                    .listRowBackground(Color("backGroundApp"))
+                    .padding(.vertical, 10)
                 }.listStyle(.plain)
+                    
                 
                     
             }

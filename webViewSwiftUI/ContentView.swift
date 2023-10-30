@@ -10,18 +10,26 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-            TabView {
+        TabView {
+            Group {
                 TradeView()
+                
                     .tabItem {
-                        Image(systemName: "chart.xyaxis.line")
-                        Text("Trade")
+                        Label("Trade", systemImage: "chart.xyaxis.line")
                     }
+                
+                
                 TopView()
                     .tabItem {
                         Image(systemName: "person")
                         Text("Top")
                     }
             }
+            .toolbarBackground(Color("ColortoolBar"), for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
+            
+            
+        }
         
     }
     
