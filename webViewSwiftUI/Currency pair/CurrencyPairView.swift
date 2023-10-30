@@ -13,7 +13,7 @@ struct CurrencyPairView: View {
         ZStack{
             Color("backGroundApp")
                 .ignoresSafeArea()
-            VStack {
+            VStack(spacing: 50) {
                 Text("CurrencyPair")
                     .foregroundStyle(.white)
                     .bold()
@@ -21,6 +21,13 @@ struct CurrencyPairView: View {
                 Spacer()
                 NavigationLink("GRP", destination: TradeView(curs: "GRR"))
                     .foregroundStyle(.white)
+                    .costomStyle()
+                NavigationLink("EUR / USD", destination: TradeView(curs: "EUR / USD"))
+                    .foregroundStyle(.white)
+                    .costomStyle()
+                NavigationLink("GPB / USD", destination: TradeView(curs: "GPB / USD"))
+                    .foregroundStyle(.white)
+                    .costomStyle()
                 Spacer()
             }.padding()
             
