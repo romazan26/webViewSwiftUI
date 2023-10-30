@@ -14,7 +14,7 @@ struct TopView: View {
     var body: some View {
         
         ZStack {
-            Color.black
+            Color("backGroundApp")
                 .ignoresSafeArea()
             VStack {
                 
@@ -24,20 +24,27 @@ struct TopView: View {
                     .foregroundStyle(.white)
                 List(tops) { top in
                     
-                    HStack {
-                        Text("\(top.id)")
-                            .frame(width: 10, alignment: .leading)
-                        Text("\(top.country)")
-                            .frame(width: 80, alignment: .leading)
-                        Text("\(top.name)")
-                            .frame(width: 100, alignment: .leading)
-                        Text("\(top.deposite)")
-                            .frame(width: 80, alignment: .leading)
-                        Text("\(top.profit)")
-                            .frame(width: 80, alignment: .leading)
+                    ZStack {
+                        Color("backGroundApp")
+                            .ignoresSafeArea()
+                        HStack {
+                            Text("\(top.id)")
+                                .frame(width: 20, alignment: .center)
+                            Text("\(top.country)")
+                                .frame(width: 60, alignment: .leading)
+                            Text("\(top.name)")
+                                .frame(width: 70, alignment: .leading)
+                            Text("\(top.deposite)$")
+                                .frame(width: 90, alignment: .trailing)
+                            Text("\(top.profit)$")
+                                .frame(width: 90, alignment: .trailing)
+                                .foregroundStyle(.green)
+                        }.foregroundStyle(.white)
+                        
                     }
                     
                 }.listStyle(.plain)
+                
                     
             }
             .padding()
