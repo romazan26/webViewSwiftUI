@@ -9,10 +9,11 @@ import SwiftUI
 
 struct TradeView: View {
     @State private var isLoading = true
-    @State private var balance = "10 000"
+    @State private var balance = "10000"
     @State private var timer = "10:00"
-    @State private var Investment = "1,000"
+    @State private var Investment = "1000"
     @State var curs = "BTC/USD"
+    @State private var showAlert = false
     
     @FocusState private var keyboardIsFocused: Bool
     var body: some View {
@@ -79,6 +80,7 @@ struct TradeView: View {
                                     .frame(width: 50)
                                     .foregroundColor(.white)
                                     .bold()
+                                    
                                 Image(systemName: "plus.circle")
                             }
                         
@@ -93,7 +95,7 @@ struct TradeView: View {
                     
                     HStack{
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {showAlert.toggle()}, label: {
                             Text("Sell")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
@@ -103,7 +105,11 @@ struct TradeView: View {
                         .cornerRadius(10))
                         .padding(.horizontal, 50)
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {
+                            balance = "\((Int(balance)!) - (Int(Investment))!)"
+                            showAlert.toggle()
+                        },
+                               label: {
                             Text("Buy")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
@@ -122,7 +128,9 @@ struct TradeView: View {
             }.onTapGesture {
                 keyboardIsFocused = false
         }
-        }
+        }.alert(isPresented: $showAlert, content: {
+            Alert(title: Text("successfully"))
+        })
         .navigationBarBackButtonHidden(true)
     }
 }
