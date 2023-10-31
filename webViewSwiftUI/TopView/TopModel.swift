@@ -12,8 +12,8 @@ struct Top: Identifiable {
     let id: Int
     let country: String
     let name: String
-    let deposite: Int
-    let profit: Int
+    var deposite: Int
+    var profit: Int
     
     static func getTop() -> [Top] {
         [
