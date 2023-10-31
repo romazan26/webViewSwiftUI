@@ -123,6 +123,7 @@ struct TradeView: View {
                 keyboardIsFocused = false
         }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
